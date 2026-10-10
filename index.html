@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SteepWrap — школьный исследовательский проект в области биоразлагаемых упаковочных материалов.">
+  <title>SteppeWrap — исследовательский проект</title>
+  <style>
+    :root {
+      --green: #315c43;
+      --light: #f4f5ed;
+      --text: #243229;
+      --muted: #68736a;
+      --accent: #dbe7cf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.65;
+    }
+
+    header {
+      background: var(--light);
+      border-bottom: 1px solid #e2e6dc;
+    }
+
+    .container {
+      width: min(1080px, 90%);
+      margin: 0 auto;
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 16px 0;
+    }
+
+    .logo {
+      color: var(--green);
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--light);
+      padding: 76px 0 84px;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(2.2rem, 6vw, 4.4rem);
+      line-height: 1.12;
+      margin: 18px 0;
+      letter-spacing: -0.04em;
+    }
+
+    .lead {
+      max-width: 690px;
+      font-size: 1.15rem;
+      color: #4c5b50;
+    }
+
+    .section {
+      padding: 58px 0;
+    }
+
+    h2 {
+      color: var(--green);
+      font-size: 1.8rem;
+      line-height: 1.25;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      border: 1px solid #e1e6dd;
+      border-radius: 14px;
+      padding: 24px;
+      background: #fff;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--green);
+    }
+
+    .note {
+      border-left: 4px solid var(--green);
+      background: var(--light);
+      padding: 18px 22px;
+      margin-top: 28px;
+    }
+
+    footer {
+      background: #263c2e;
+      color: #fff;
+      padding: 28px 0;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        align-items: flex-start;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 4px 12px 4px 0;
+      }
+
+      .hero {
+        padding: 52px 0;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">SteepWrap</div>
+      <nav aria-label="Основная навигация">
+        <a href="#about">О проекте</a>
+        <a href="#research">Исследование</a>
+        <a href="#team">Команда</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Школьный исследовательский проект</div>
+        <h1>Исследуем новые возможности упаковочных материалов</h1>
+        <p class="lead">
+          SteppeWrap — исследовательский проект, посвящённый разработке
+          и изучению материалов на основе биоразлагаемых компонентов.
+          Мы проверяем свойства образцов с помощью экспериментов
+          и анализа полученных данных.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2>О проекте</h2>
+        <p>
+          Наша задача — исследовать, как состав и способ приготовления
+          материала влияют на его свойства. Важная часть проекта —
+          проводить измерения, сравнивать образцы и документировать
+          результаты, включая ограничения исследования.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="research" style="background:#fafbf8">
+      <div class="container">
+        <h2>Направления исследования</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Состав материалов</h3>
+            <p>
+              Изучение компонентов и их возможного влияния
+              на свойства исследуемых образцов.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Экспериментальная проверка</h3>
+            <p>
+              Сравнение образцов по выбранным показателям
+              при документированных условиях испытаний.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Анализ результатов</h3>
+            <p>
+              Систематизация измерений, оценка различий
+              и формулирование выводов на основе данных.
+            </p>
+          </article>
+        </div>
+        <div class="note">
+          <strong>Принцип SteppeWrap:</strong>
+          выводы должны опираться на результаты экспериментов.
+          Пока данные не проверены, мы не заявляем о доказанных
+          преимуществах материала.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container">
+        <h2>Команда проекта</h2>
+        <p>
+          Исследовательская работа объединяет постановку вопросов,
+          экспериментальную проверку, анализ данных и научную коммуникацию.
+          Информация об участниках и научном руководителе будет добавлена
+          после согласования окончательного текста.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>SteppeWrap</strong> — исследовательский проект.</p>
+      <p>Научные утверждения публикуются только после проверки.</p>
+    </div>
+  </footer>
+</body>
+</html>
