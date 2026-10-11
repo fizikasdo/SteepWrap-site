@@ -5,35 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
   <meta name="description" content="SteepWrap is a school research project exploring biodegradable packaging materials.">
+  <meta property="og:title" content="SteepWrap — Research Project">
+  <meta property="og:description" content="SteepWrap is a school research project exploring biodegradable packaging materials.">
   <title>SteepWrap — Research Project</title>
-  </head>
+</head>
 <body>
   <header>
     <div class="container nav">
-      <div class="logo">SteepWrap</div>
+      <a class="logo" href="./">
+        <svg class="logo-leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6"/>
+        </svg>
+        <span>SteepWrap</span>
+      </a>
       
-<nav aria-label="Main navigation">
-  <a href="#about">About</a>
-  <a href="./research.html">Research</a>
-  <a href="./team.html">Team</a>
-  <span aria-label="Language">
-    <a href="../">RU</a> |
-    <a href="./">EN</a>
-  </span>
-</nav>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="./research.html">Research</a>
+        <a href="./team.html">Team</a>
+        <span aria-label="Language" class="lang-switch">
+          <a href="../">RU</a> |
+          <strong>EN</strong>
+        </span>
+      </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <div class="eyebrow">School Research Project</div>
-        <h1>Exploring new possibilities in packaging materials</h1>
-        <p class="lead">
-          SteepWrap is a school research project focused on developing and studying alternative packaging materials 
-          with the potential for biodegradation. We investigate the properties of experimental samples, conduct tests, 
-          and analyze the results.
-        </p>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+              <span>Ecological Research Project</span>
+            </div>
+            <h1>Exploring new possibilities in packaging materials</h1>
+            <p class="lead">
+              SteepWrap is a school research project focused on developing and studying alternative packaging materials 
+              with the potential for biodegradation. We investigate the properties of experimental samples, conduct tests, 
+              and analyze the results.
+            </p>
+            <div class="hero-metadata">
+              <span>Plant-based raw materials</span>
+              <span aria-hidden="true">·</span>
+              <span>Laboratory testing</span>
+              <span aria-hidden="true">·</span>
+              <span>Biodegradation evaluation</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img 
+                src="/src/assets/images/eco_packaging_sample_1791735045345.jpg" 
+                alt="Experimental plant-based biodegradable packaging film samples on laboratory table"
+                class="hero-image"
+                referrerPolicy="no-referrer"
+              />
+              <div class="hero-caption">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Laboratory samples of alternative materials</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -49,32 +91,68 @@
       </div>
     </section>
 
-    <section class="section" id="research" style="background:#fafbf8">
+    <section class="section" id="research">
       <div class="container">
         <h2>Research Areas</h2>
         <div class="cards">
           <article class="card">
-            <h3>Material Composition</h3>
-            <p>
-              Studying components and their potential influence
-              on the properties of the samples.
-            </p>
+            <div class="card-media">
+              <img 
+                src="/src/assets/images/raw_components_lab_1791735057639.jpg" 
+                alt="Study of raw organic plant materials and natural cellulose components"
+                class="card-image"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-index">AREA 01</div>
+              <h3>Material Composition</h3>
+              <p>
+                Studying components and their potential influence
+                on the properties of the samples.
+              </p>
+            </div>
           </article>
+
           <article class="card">
-            <h3>Experimental Testing</h3>
-            <p>
-              Comparing samples using selected measurements
-              under documented test conditions.
-            </p>
+            <div class="card-media">
+              <img 
+                src="/src/assets/images/testing_measurement_1791735070247.jpg" 
+                alt="Precision measurements of sample thickness and physical properties"
+                class="card-image"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-index">AREA 02</div>
+              <h3>Experimental Testing</h3>
+              <p>
+                Comparing samples using selected measurements
+                under documented test conditions.
+              </p>
+            </div>
           </article>
+
           <article class="card">
-            <h3>Data Analysis</h3>
-            <p>
-              Organizing measurements, evaluating differences,
-              and drawing conclusions based on evidence.
-            </p>
+            <div class="card-media">
+              <img 
+                src="/src/assets/images/degradation_analysis_1791735080671.jpg" 
+                alt="Analysis of material degradation and scientific data documentation"
+                class="card-image"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-index">AREA 03</div>
+              <h3>Data Analysis</h3>
+              <p>
+                Organizing measurements, evaluating differences,
+                and drawing conclusions based on evidence.
+              </p>
+            </div>
           </article>
         </div>
+
         <div class="note">
           <strong>Our principle:</strong>
           conclusions must be supported by experimental results.
@@ -90,7 +168,7 @@
         <p>
           The research brings together scientific questions,
           experimental testing, data analysis, and communication.
-          Meet the project team and learn about each member’s role on the Team page.
+          Meet the project team and learn about each member’s role on the <a href="./team.html">Team page</a>.
         </p>
       </div>
     </section>
@@ -98,10 +176,9 @@
 
   <footer>
     <div class="container">
-      <p><strong>SteepWrap</strong> — Research Project.</p>
+      <p><strong>SteepWrap</strong> — School Research Project on Eco-Friendly Packaging Materials.</p>
       <p>Scientific claims are published only after review.</p>
     </div>
   </footer>
 </body>
 </html>
-

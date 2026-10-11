@@ -1,38 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  
+  <!-- Метаданные страницы -->
   <meta name="description" content="Исследовательское направление SteepWrap: разработка и экспериментальное изучение альтернативных упаковочных материалов.">
+  <meta property="og:title" content="Исследование — SteepWrap">
+  <meta property="og:description" content="Исследовательское направление SteepWrap: разработка и экспериментальное изучение альтернативных упаковочных материалов.">
   <title>Исследование — SteepWrap</title>
-  </head>
+</head>
 <body>
-<header>
+
+  <!-- ШАПКА САЙТА -->
+  <header>
     <div class="container nav">
-      <a class="logo" href="../">SteepWrap</a>
-      <nav aria-label="Main navigation">
+      <a class="logo" href="../">
+        <svg class="logo-leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6"/>
+        </svg>
+        <span>SteepWrap</span>
+      </a>
+      
+      <nav aria-label="Основная навигация">
         <a href="../">Главная</a>
-        <a href="./research.html" aria-current="page"> Исследование</a>
+        <a href="./research.html" aria-current="page">Исследование</a>
         <a href="./team.html">Команда</a>
-        <a href="../en/research.html" lang="en">EN</a>
+        <span aria-label="Язык" class="lang-switch">
+          <strong>RU</strong> |
+          <a href="../en/research.html" lang="en">EN</a>
+        </span>
       </nav>
     </div>
   </header>
  
+  <!-- ОСНОВНОЙ КОНТЕНТ СТРАНИЦЫ ИССЛЕДОВАНИЯ -->
   <main>
+    <!-- Вводный блок с фото процесса измерений -->
     <section class="hero">
       <div class="container">
-        <div class="eyebrow">Исследовательский проект</div>
-        <h1>Исследование и разработка упаковочных материалов</h1>
-        <p class="lead">
-          SteppeWrap направлен на разработку и изучение альтернативных
-          упаковочных материалов с потенциалом биоразложения.
-        </p>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span>Исследовательский проект</span>
+            </div>
+            <h1>Исследование и разработка упаковочных материалов</h1>
+            <p class="lead">
+              SteepWrap направлен на разработку и изучение альтернативных
+              упаковочных материалов с потенциалом биоразложения.
+            </p>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img 
+                src="/src/assets/images/testing_measurement_1791735070247.jpg" 
+                alt="Лабораторные испытания и оценка характеристик образцов"
+                class="hero-image"
+                referrerPolicy="no-referrer"
+              />
+              <div class="hero-caption">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Лабораторный контроль и сравнительные испытания</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Подробные разделы научной работы -->
     <div class="container">
       <section>
         <h2>Исследовательское направление</h2>
@@ -93,6 +134,7 @@
         </p>
       </section>
 
+      <!-- Принцип работы -->
       <div class="note">
         <strong>Наш принцип:</strong>
         научные утверждения должны соответствовать фактическим данным,
@@ -101,9 +143,10 @@
     </div>
   </main>
 
+  <!-- ПОДВАЛ САЙТА -->
   <footer>
     <div class="container">
-      <p><strong>SteepWrap</strong> — исследовательский проект.</p>
+      <p><strong>SteepWrap</strong> — школьный исследовательский проект.</p>
       <p>Материалы публикуются после соответствующей проверки.</p>
     </div>
   </footer>

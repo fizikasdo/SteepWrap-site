@@ -1,43 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  
+  <!-- Метаданные страницы для поисковиков и соцсетей -->
   <meta name="description" content="SteepWrap — школьный исследовательский проект в области биоразлагаемых упаковочных материалов.">
+  <meta property="og:title" content="SteepWrap — исследовательский проект">
+  <meta property="og:description" content="SteepWrap — школьный исследовательский проект в области биоразлагаемых упаковочных материалов.">
   <title>SteepWrap — исследовательский проект</title>
-  </head>
+</head>
 <body>
+
+  <!-- ======================================================================
+       ШАПКА САЙТА (HEADER)
+       Содержит название проекта (логотип) и основное навигационное меню
+       ====================================================================== -->
   <header>
     <div class="container nav">
-      <div class="logo">SteepWrap</div>
+      <!-- Логотип со стилизованным векторным значком листика -->
+      <a class="logo" href="./">
+        <svg class="logo-leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6"/>
+        </svg>
+        <span>SteepWrap</span>
+      </a>
       
-<nav aria-label="Основная навигация">
-  <a href="#about">О проекте</a>
-  <a href="./ru/research.html">Исследование</a>
-  <a href="./ru/team.html">Команда</a>
-  <span aria-label="Язык">
-    <a href="./">RU</a> |
-    <a href="en/">EN</a>
-  </span>
-</nav>
+      <!-- Меню навигации и переключатель языка -->
+      <nav aria-label="Основная навигация">
+        <a href="#about">О проекте</a>
+        <a href="./ru/research.html">Исследование</a>
+        <a href="./ru/team.html">Команда</a>
+        <span aria-label="Язык" class="lang-switch">
+          <strong>RU</strong> |
+          <a href="./en/">EN</a>
+        </span>
+      </nav>
     </div>
   </header>
 
+  <!-- ======================================================================
+       ОСНОВНОЕ СОДЕРЖИМОЕ СТРАНИЦЫ (MAIN)
+       ====================================================================== -->
   <main>
+
+    <!-- ПЕРВЫЙ ЭКРАН (HERO): Введение в проект и фото экспериментальных образцов -->
     <section class="hero">
       <div class="container">
-        <div class="eyebrow">Школьный исследовательский проект</div>
-        <h1>Исследуем новые возможности упаковочных материалов</h1>
-        <p class="lead">
-          SteepWrap — школьный исследовательский проект, посвящённый разработке и изучению альтернативных упаковочных материалов 
-          с потенциалом биоразложения. Мы исследуем свойства экспериментальных образцов, проводим испытания и анализируем 
-          полученные данные.
-        </p>
+        <div class="hero-grid">
+          <!-- Левая колонка: описание проекта -->
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span>Экологический исследовательский проект</span>
+            </div>
+            <h1>Исследуем новые возможности упаковочных материалов</h1>
+            <p class="lead">
+              SteepWrap — школьный исследовательский проект, посвящённый разработке и изучению альтернативных упаковочных материалов 
+              с потенциалом биоразложения. Мы исследуем свойства экспериментальных образцов, проводим испытания и анализируем 
+              полученные данные.
+            </p>
+            <div class="hero-metadata">
+              <span>Растительное сырье</span>
+              <span aria-hidden="true">·</span>
+              <span>Лабораторные испытания</span>
+              <span aria-hidden="true">·</span>
+              <span>Оценка биоразложения</span>
+            </div>
+          </div>
+          
+          <!-- Правая колонка: карточка с фотографией лабораторных образцов -->
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img 
+                src="/src/assets/images/eco_packaging_sample_1791735045345.jpg" 
+                alt="Экспериментальные образцы биоразлагаемых упаковочных плёнок на основе растительного сырья в лаборатории"
+                class="hero-image"
+                referrerPolicy="no-referrer"
+              />
+              <div class="hero-caption">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Лабораторные образцы альтернативных материалов</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- СЕКЦИЯ 1: О проекте -->
     <section class="section" id="about">
       <div class="container">
         <h2>О проекте</h2>
@@ -50,32 +105,74 @@
       </div>
     </section>
 
-    <section class="section" id="research" style="background:#fafbf8">
+    <!-- СЕКЦИЯ 2: Направления исследования (3 карточки) -->
+    <section class="section" id="research">
       <div class="container">
         <h2>Направления исследования</h2>
+        
         <div class="cards">
+          <!-- Карточка 1: Состав материалов -->
           <article class="card">
-            <h3>Состав материалов</h3>
-            <p>
-              Изучение компонентов и их возможного влияния
-              на свойства исследуемых образцов.
-            </p>
+            <div class="card-media">
+              <img 
+                src="/src/assets/images/raw_components_lab_1791735057639.jpg" 
+                alt="Изучение растительных компонентов и природного сырья"
+                class="card-image"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-index">НАПРАВЛЕНИЕ 01</div>
+              <h3>Состав материалов</h3>
+              <p>
+                Изучение компонентов и их возможного влияния
+                на свойства исследуемых образцов.
+              </p>
+            </div>
           </article>
+
+          <!-- Карточка 2: Экспериментальная проверка -->
           <article class="card">
-            <h3>Экспериментальная проверка</h3>
-            <p>
-              Сравнение образцов по выбранным показателям
-              при документированных условиях испытаний.
-            </p>
+            <div class="card-media">
+              <img 
+                src="/src/assets/images/testing_measurement_1791735070247.jpg" 
+                alt="Проведение точных физико-механических измерений образцов"
+                class="card-image"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-index">НАПРАВЛЕНИЕ 02</div>
+              <h3>Экспериментальная проверка</h3>
+              <p>
+                Сравнение образцов по выбранным показателям
+                при документированных условиях испытаний.
+              </p>
+            </div>
           </article>
+
+          <!-- Карточка 3: Анализ результатов -->
           <article class="card">
-            <h3>Анализ результатов</h3>
-            <p>
-              Систематизация измерений, оценка различий
-              и формулирование выводов на основе данных.
-            </p>
+            <div class="card-media">
+              <img 
+                src="/src/assets/images/degradation_analysis_1791735080671.jpg" 
+                alt="Анализ динамики поведения образцов и регистрация данных"
+                class="card-image"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-index">НАПРАВЛЕНИЕ 03</div>
+              <h3>Анализ результатов</h3>
+              <p>
+                Систематизация измерений, оценка различий
+                и формулирование выводов на основе данных.
+              </p>
+            </div>
           </article>
         </div>
+
+        <!-- Принцип научной добросовестности -->
         <div class="note">
           <strong>Принцип SteepWrap:</strong>
           выводы должны опираться на результаты экспериментов.
@@ -85,23 +182,29 @@
       </div>
     </section>
 
+    <!-- СЕКЦИЯ 3: Команда проекта -->
     <section class="section" id="team">
       <div class="container">
         <h2>Команда проекта</h2>
         <p>
           Исследовательская работа объединяет постановку вопросов,
           экспериментальную проверку, анализ данных и научную коммуникацию.
-          Познакомьтесь с участниками проекта и их ролями на странице «Команда».
+          Познакомьтесь с участниками проекта и их ролями на странице <a href="./ru/team.html">«Команда»</a>.
         </p>
       </div>
     </section>
+
   </main>
 
+  <!-- ======================================================================
+       ПОДВАЛ САЙТА (FOOTER)
+       ====================================================================== -->
   <footer>
     <div class="container">
-      <p><strong>SteepWrap</strong> — исследовательский проект.</p>
+      <p><strong>SteepWrap</strong> — школьный исследовательский проект в области экологических упаковочных материалов.</p>
       <p>Научные утверждения публикуются только после проверки.</p>
     </div>
   </footer>
+
 </body>
 </html>

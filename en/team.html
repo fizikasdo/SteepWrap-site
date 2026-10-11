@@ -4,24 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  
+  <!-- Page metadata -->
   <meta name="description" content="Meet the SteepWrap research team working on alternative packaging materials, chemistry experiments, and engineering development.">
+  <meta property="og:title" content="Team — SteepWrap">
+  <meta property="og:description" content="Meet the SteepWrap research team working on alternative packaging materials, chemistry experiments, and engineering development.">
   <title>Team — SteepWrap</title>
-  </head>
+</head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <nav aria-label="Main navigation">
-      <a class="logo" href="../">SteepWrap</a>
-      <div class="nav-links">
+    <div class="container nav">
+      <a class="logo" href="../en/">
+        <svg class="logo-leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6"/>
+        </svg>
+        <span>SteepWrap</span>
+      </a>
+      
+      <nav aria-label="Main navigation">
         <a href="../en/">Home</a>
         <a href="./research.html">Research</a>
         <a href="./team.html" aria-current="page">Team</a>
-        <a href="../ru/team.html" lang="ru">RU</a>
-      </div>
-    </nav>
+        <span aria-label="Language" class="lang-switch">
+          <a href="../ru/team.html" lang="ru">RU</a> |
+          <strong>EN</strong>
+        </span>
+      </nav>
+    </div>
   </header>
 
+  <!-- TEAM CONTENT -->
   <main>
-    <p class="eyebrow">People and collaboration</p>
+    <div class="eyebrow">
+      <span>People and collaboration</span>
+    </div>
     <h1>The SteepWrap Team</h1>
     <p class="intro">
       SteepWrap is a research project focused on developing and investigating
@@ -29,37 +48,63 @@
       The team combines research, chemistry, and engineering.
     </p>
 
+    <!-- Team Members Grid (CSS Grid: 2 columns) -->
     <section class="team" aria-label="Team members">
+      
+      <!-- Member 1: Project Supervisor -->
       <article class="member">
-        <h2>Yuri Kotvitsky</h2>
-        <p class="role">Project Supervisor</p>
+        <div class="member-header">
+          <div class="member-avatar" aria-hidden="true">YK</div>
+          <div>
+            <h2>Yuri Kotvitsky</h2>
+            <p class="role">Project Supervisor</p>
+          </div>
+        </div>
         <p>
           Provides project leadership and methodological guidance
           for the team's research activities.
         </p>
       </article>
 
+      <!-- Member 2: Team Captain and Researcher -->
       <article class="member">
-        <h2>Diana Kotvitskaya</h2>
-        <p class="role">Team Captain and Researcher</p>
+        <div class="member-header">
+          <div class="member-avatar" aria-hidden="true">DK</div>
+          <div>
+            <h2>Diana Kotvitskaya</h2>
+            <p class="role">Team Captain and Researcher</p>
+          </div>
+        </div>
         <p>
           Coordinates the team's work, conducts experiments,
           and analyzes the results.
         </p>
       </article>
 
+      <!-- Member 3: Chemistry Researcher -->
       <article class="member">
-        <h2>L. Anselm</h2>
-        <p class="role">Chemistry Researcher</p>
+        <div class="member-header">
+          <div class="member-avatar" aria-hidden="true">LA</div>
+          <div>
+            <h2>L. Anselm</h2>
+            <p class="role">Chemistry Researcher</p>
+          </div>
+        </div>
         <p>
           Participates in chemistry-related experiments
           and the fabrication of experimental material samples.
         </p>
       </article>
 
+      <!-- Member 4: Engineering Design -->
       <article class="member">
-        <h2>I. Gribenshchikov</h2>
-        <p class="role">Engineering Design and Development</p>
+        <div class="member-header">
+          <div class="member-avatar" aria-hidden="true">IG</div>
+          <div>
+            <h2>I. Gribenshchikov</h2>
+            <p class="role">Engineering Design and Development</p>
+          </div>
+        </div>
         <p>
           Independently designs and develops structures and equipment
           to support the team's research and experimental work.
@@ -67,6 +112,7 @@
       </article>
     </section>
 
+    <!-- Approach -->
     <section class="approach">
       <h2>Our Approach</h2>
       <p>
@@ -78,8 +124,12 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    SteepWrap · Research and Development of Packaging Materials
+    <div class="container">
+      <p><strong>SteepWrap</strong> · Research and Development of Packaging Materials</p>
+      <p>School Research Project.</p>
+    </div>
   </footer>
 </body>
 </html>

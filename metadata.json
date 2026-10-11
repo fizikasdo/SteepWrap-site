@@ -1,0 +1,8 @@
+{
+  "name": "SteepWrap — исследовательский проект",
+  "description": "SteepWrap — школьный исследовательский проект в области биоразлагаемых упаковочных материалов.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
