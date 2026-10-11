@@ -1,0 +1,341 @@
+
+/* =========================================
+   SteepWrap — единая таблица стилей сайта
+   Общие стили для русской и английской версий
+   ========================================= */
+
+/* 1. Цветовая палитра и основные настройки */
+
+:root {
+  --green: #315c43;
+  --green-light: #e8efe8;
+  --light: #f4f5ed;
+  --cream: #f8f7f0;
+  --text: #26342b;
+  --muted: #68756c;
+  --white: #ffffff;
+  --border: #dce4da;
+  --accent: #dbe7cf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--green);
+}
+
+/* 2. Шапка и общая навигация */
+
+header {
+  background: var(--light);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Контейнеры главной страницы и исследования */
+
+.container {
+  width: min(1080px, 90%);
+  margin: 0 auto;
+}
+
+/* Шапка главной страницы и страниц исследования */
+
+.container.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 16px 0;
+}
+
+/* Шапка страниц команды */
+
+header > nav {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Логотип проекта */
+
+.logo {
+  color: var(--green);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Навигация на главных страницах и страницах исследования */
+
+header .container.nav > nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+/* Группа ссылок на страницах команды */
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+
+nav a {
+  color: var(--text);
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* 3. Главный экран и заголовки */
+
+.hero {
+  background: var(--light);
+  padding: 56px 0;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 800px;
+  margin: 16px 0 18px;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.lead {
+  max-width: 760px;
+  color: #4c5b50;
+  font-size: 1.12rem;
+}
+
+.intro {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 1.12rem;
+  margin-bottom: 38px;
+}
+
+h2 {
+  color: var(--green);
+  font-size: 1.65rem;
+  line-height: 1.3;
+}
+
+p {
+  max-width: 800px;
+}
+
+/* 4. Секции главной страницы */
+
+.section {
+  padding: 58px 0;
+}
+
+#research.section {
+  background: #fafbf8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid #e1e6dd;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--green);
+}
+
+.note {
+  margin-top: 28px;
+  padding: 20px 24px;
+  border-left: 4px solid var(--green);
+  border-radius: 0 10px 10px 0;
+  background: var(--light);
+}
+
+/* 5. Страницы исследования */
+
+main {
+  padding-bottom: 64px;
+}
+
+main .container > section:not(.team):not(.approach) {
+  padding: 24px 0;
+  border-bottom: 1px solid #e7eae3;
+}
+
+main .container > section h2 {
+  line-height: 1.3;
+}
+
+/* 6. Страницы команды */
+
+body:has(.team) {
+  background: var(--cream);
+}
+
+body:has(.team) header {
+  background: var(--white);
+}
+
+body:has(.team) main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.member {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.member h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.role {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 0.93rem;
+  margin: 0 0 12px;
+}
+
+.member p:last-child {
+  margin-bottom: 0;
+}
+
+.approach {
+  margin-top: 36px;
+  padding: 26px;
+  background: var(--green-light);
+  border-radius: 16px;
+}
+
+.approach h2 {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+/* 7. Подвал сайта */
+
+footer {
+  background: #263c2e;
+  color: var(--white);
+  padding: 28px 24px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer .container {
+  width: min(1080px, 100%);
+}
+
+body:has(.team) footer {
+  text-align: center;
+}
+
+/* 8. Адаптация для телефонов и узких экранов */
+
+@media (max-width: 700px) {
+  .container.nav {
+    align-items: flex-start;
+  }
+
+  header .container.nav > nav {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .section {
+    padding: 44px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+  body:has(.team) main {
+    padding: 44px 20px 60px;
+  }
+
+  header > nav {
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .member {
+    padding: 21px;
+  }
+}
