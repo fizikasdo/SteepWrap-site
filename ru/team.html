@@ -4,24 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  
+  <!-- Метаданные страницы -->
   <meta name="description" content="Команда исследовательского проекта SteepWrap: исследование материалов, химические эксперименты и инженерная разработка.">
+  <meta property="og:title" content="Команда — SteepWrap">
+  <meta property="og:description" content="Команда исследовательского проекта SteepWrap: исследование материалов, химические эксперименты и инженерная разработка.">
   <title>Команда — SteepWrap</title>
-  </head>
+</head>
 <body>
+
+  <!-- ШАПКА САЙТА -->
   <header>
-    <nav aria-label="Основная навигация">
-      <a class="logo" href="../">SteepWrap</a>
-      <div class="nav-links">
+    <div class="container nav">
+      <a class="logo" href="../">
+        <svg class="logo-leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6"/>
+        </svg>
+        <span>SteepWrap</span>
+      </a>
+      <nav aria-label="Основная навигация">
         <a href="../">Главная</a>
         <a href="./research.html">Исследование</a>
         <a href="./team.html" aria-current="page">Команда</a>
-        <a href="../en/team.html" lang="en">EN</a>
-      </div>
-    </nav>
+        <span aria-label="Язык" class="lang-switch">
+          <strong>RU</strong> |
+          <a href="../en/team.html" lang="en">EN</a>
+        </span>
+      </nav>
+    </div>
   </header>
 
+  <!-- ОСНОВНОЙ КОНТЕНТ: УЧАСТНИКИ ПРОЕКТА -->
   <main>
-    <p class="eyebrow">Люди и сотрудничество</p>
+    <div class="eyebrow">
+      <span>Люди и сотрудничество</span>
+    </div>
     <h1>Команда SteepWrap</h1>
     <p class="intro">
       SteepWrap — исследовательский проект, посвящённый разработке
@@ -30,37 +48,63 @@
       и инженерную работу.
     </p>
 
+    <!-- Сетка карточек участников (CSS Grid: 2 колонки) -->
     <section class="team" aria-label="Участники команды">
+      
+      <!-- Участник 1: Руководитель проекта -->
       <article class="member">
-        <h2>Котвицкий Ю.</h2>
-        <p class="role">Руководитель проекта</p>
+        <div class="member-header">
+          <div class="member-avatar" aria-hidden="true">ЮК</div>
+          <div>
+            <h2>Котвицкий Ю.</h2>
+            <p class="role">Руководитель проекта</p>
+          </div>
+        </div>
         <p>
           Осуществляет руководство проектом и методическое сопровождение
           исследовательской работы команды.
         </p>
       </article>
 
+      <!-- Участник 2: Капитан и исследователь -->
       <article class="member">
-        <h2>Котвицкая Д.</h2>
-        <p class="role">Капитан команды и исследователь</p>
+        <div class="member-header">
+          <div class="member-avatar" aria-hidden="true">ДК</div>
+          <div>
+            <h2>Котвицкая Д.</h2>
+            <p class="role">Капитан команды и исследователь</p>
+          </div>
+        </div>
         <p>
           Координирует работу команды, проводит эксперименты
           и анализирует полученные результаты.
         </p>
       </article>
 
+      <!-- Участник 3: Химик-исследователь -->
       <article class="member">
-        <h2>Ансельм Л.</h2>
-        <p class="role">Химик-исследователь</p>
+        <div class="member-header">
+          <div class="member-avatar" aria-hidden="true">ЛА</div>
+          <div>
+            <h2>Ансельм Л.</h2>
+            <p class="role">Химик-исследователь</p>
+          </div>
+        </div>
         <p>
           Участвует в проведении химических экспериментов
           и изготовлении экспериментальных образцов материалов.
         </p>
       </article>
 
+      <!-- Участник 4: Инженер-разработчик -->
       <article class="member">
-        <h2>Грибенщиков И.</h2>
-        <p class="role">Инженер-разработчик</p>
+        <div class="member-header">
+          <div class="member-avatar" aria-hidden="true">ИГ</div>
+          <div>
+            <h2>Грибенщиков И.</h2>
+            <p class="role">Инженер-разработчик</p>
+          </div>
+        </div>
         <p>
           Самостоятельно разрабатывает конструкции и оборудование,
           необходимые для исследовательской и экспериментальной работы.
@@ -68,6 +112,7 @@
       </article>
     </section>
 
+    <!-- Подход команды к работе -->
     <section class="approach">
       <h2>Наш подход</h2>
       <p>
@@ -80,8 +125,12 @@
     </section>
   </main>
 
+  <!-- ПОДВАЛ САЙТА -->
   <footer>
-    SteepWrap · Исследование и разработка упаковочных материалов
+    <div class="container">
+      <p><strong>SteepWrap</strong> · Исследование и разработка упаковочных материалов</p>
+      <p>Школьный исследовательский проект.</p>
+    </div>
   </footer>
 </body>
 </html>

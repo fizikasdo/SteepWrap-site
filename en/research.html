@@ -1,36 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  
+  <!-- Page metadata -->
   <meta name="description" content="SteepWrap research into alternative packaging materials and their properties.">
+  <meta property="og:title" content="Research — SteepWrap">
+  <meta property="og:description" content="SteepWrap research into alternative packaging materials and their properties.">
   <title>Research — SteepWrap</title>
-  </head>
+</head>
 <body>
+
+  <!-- HEADER -->
   <header>
     <div class="container nav">
-      <a class="logo" href="../">SteepWrap</a>
+      <a class="logo" href="../en/">
+        <svg class="logo-leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6"/>
+        </svg>
+        <span>SteepWrap</span>
+      </a>
+      
       <nav aria-label="Main navigation">
         <a href="../en/">Home</a>
         <a href="./research.html" aria-current="page">Research</a>
         <a href="./team.html">Team</a>
-        <a href="../ru/research.html">RU</a>
+        <span aria-label="Language" class="lang-switch">
+          <a href="../ru/research.html" lang="ru">RU</a> |
+          <strong>EN</strong>
+        </span>
       </nav>
     </div>
   </header>
 
+  <!-- RESEARCH CONTENT -->
   <main>
     <section class="hero">
       <div class="container">
-        <div class="eyebrow">Research Project</div>
-        <h1>Research and Development of Packaging Materials</h1>
-        <p class="lead">
-          SteepWrap focuses on developing and investigating
-          alternative packaging materials with the potential
-          for biodegradation.
-        </p>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span>Research Project</span>
+            </div>
+            <h1>Research and Development of Packaging Materials</h1>
+            <p class="lead">
+              SteepWrap focuses on developing and investigating
+              alternative packaging materials with the potential
+              for biodegradation.
+            </p>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img 
+                src="/src/assets/images/testing_measurement_1791735070247.jpg" 
+                alt="Laboratory measurements and testing of experimental samples"
+                class="hero-image"
+                referrerPolicy="no-referrer"
+              />
+              <div class="hero-caption">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Laboratory measurements and comparative evaluation</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -106,9 +145,10 @@
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p><strong>SteepWrap</strong> — Research Project.</p>
+      <p><strong>SteepWrap</strong> — School Research Project.</p>
       <p>Materials are published following the relevant review.</p>
     </div>
   </footer>
